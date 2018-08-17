@@ -104,90 +104,7 @@ Click the help icon above to learn more.
 
 
 
-		/* new style */
-
-		.popup {
-			display: flex;
-			position: fixed;
-			padding: 30px;
-			width: 50%;
-			left: 50%;
-			margin-left: -25%;
-			height: 50%;
-			top: 50%;
-			margin-top: -25%;
-			background: #FFF;
-			z-index: 20;
-			flex: 1;
-			flex-direction: column;
-			min-width: 240px;
-			min-height: 181px;
-			border-radius: 10px;
-			max-height: 400px;
-			align-content: space-between;
-		}
-
-
-		#popup2:after {
-			position: fixed;
-			content: "";
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			background: rgba(0, 0, 0, 0.6);
-			z-index: -2;
-		}
-
-		#popup2:before {
-			position: absolute;
-			content: "";
-			border: 3px solid black;
-			border-radius: 10px;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			background: #FFF;
-			z-index: -1;
-		}
-
-		.popupcontainer {
-			height: 100%;
-			width: 100%;
-			flex: 1;
-			display: flex;
-			flex-direction: column;
-			line-height: 1.2;
-
-			align-items: center;
-			justify-content: space-between;
-		}
-
-		.votebutton {
-			border: 2px solid black;
-			border-radius: 5px;
-			padding: 10px;
-			margin: 2px;
-			font-size: 30px;
-			display:block
-
-		}
-		
-		.votelink {
-			padding: 10px;
-			margin: 2px;
-			font-size: 24px;
-			display:block;
-			text-decoration:underline;
-		}
-
-		.votebutton:hover {
-			border-color: rgba(0, 0, 0, 0.4)
-		}
-
-		/* end new style */
-	</style>
+</style>
 </head>
 
 <body>
@@ -235,14 +152,130 @@ Click the help icon above to learn more.
 			<p>&nbsp;</p>
 		</article>
 	</section>
+
+
+
+
+
+
+
+
+
 	<!-- new popup -->
+	<style>
+			/* new style */
+
+		.popup {
+			display: flex;
+			position: fixed;
+			padding: 30px;
+			width: 50%;
+			left: 50%;
+			margin-left: -25%;
+			height: 50%;
+			top: 50%;
+			margin-top: -25%;
+			background: #FFF;
+			z-index: 20;
+			flex: 1;
+			flex-direction: column;
+			min-width: 240px;
+			min-height: 181px;
+			border-radius: 10px;
+			max-height: 400px;
+			align-content: space-between;
+		}
+
+
+		#popup2:after {
+			position: fixed;
+			content: "";
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: rgba(0, 0, 0, 0.7);
+			z-index: -2;
+		}
+
+		#popup2:before {
+			position: absolute;
+			content: "";
+			border: 3px solid black;
+			border-radius: 10px;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: #FFF;
+			z-index: -1;
+		}
+
+		.popupcontainer {
+			height: 100%;
+			width: 100%;
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			line-height: 1.2;
+
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.votebutton {
+			/* border: 2px solid black; */
+			border-radius: 5px;
+			background-color: #f52222;
+			padding: 12px;
+			margin: 2px;
+			color: white;
+			font-size: 28px;
+			display:block;
+			transition-duration: .15s
+
+		}
+
+		.votebutton:hover {
+			color: white;
+			background-color: rgb(12,89,176);
+			
+		}
+		
+		.votelink {
+			padding: 10px;
+			margin: 2px;
+			font-size: 24px;
+			display:block;
+			text-decoration:underline;
+		}
+
+		.votebutton:hover {
+			border-color: rgba(0, 0, 0, 0.4)
+		}
+
+		/* end new style */
+	</style>
 	<div class="popup" onload="show(this)" id="popup2">
 		<div class="popupcontainer">
-				<div><h1 style="font-size:40px !important; line-height:1.1; text-align: center">HAVE YOU REGISTERED<br /> TO VOTE?</h1></div>
+				<div><h1 style="font-size:40px !important; line-height:1.1; text-align: center">ARE YOU REGISTERED TO VOTE?</h1></div>
 				<div><a class="votebutton" target="blank" href="https://www.usa.gov/register-to-vote">Register here</a></div>
-				<div><a class="votelink" href="#" onclick="hide('popup2')">Continue to jonathanhorowitz.us</a></div>
+				<div><a class="votelink" href="#" onclick="hide('popup2')">continue to jonathanhorowitz.us</a></div>
 		</div>
 	</div>
+
+	<!-- end it -->
+
+
+
+
+
+
+
+
+
+
+
 
 	<footer>
 		<!-- <p>&#169; 2018 Jonathan Horowitz</p> -->
