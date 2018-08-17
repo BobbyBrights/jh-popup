@@ -101,10 +101,7 @@ Click the help icon above to learn more.
 			padding: 15px 15px;
 			width: 138px;
 		}
-
-
-
-</style>
+	</style>
 </head>
 
 <body>
@@ -163,7 +160,7 @@ Click the help icon above to learn more.
 
 	<!-- new popup -->
 	<style>
-			/* new style */
+		/* new style */
 
 		.popup {
 			display: flex;
@@ -231,36 +228,38 @@ Click the help icon above to learn more.
 			margin: 2px;
 			color: white;
 			font-size: 28px;
-			display:block;
+			display: block;
 			transition-duration: .15s
-
 		}
 
 		.votebutton:hover {
 			color: white;
-			background-color: rgb(12,89,176);
-			
+			background-color: rgb(12, 89, 176);
 		}
-		
+
 		.votelink {
 			padding: 10px;
 			margin: 2px;
 			font-size: 24px;
-			display:block;
-			text-decoration:underline;
+			display: block;
+			text-decoration: underline;
 		}
 
-		.votebutton:hover {
-			border-color: rgba(0, 0, 0, 0.4)
+		.votelink:hover {
+			cursor: pointer;
 		}
 
 		/* end new style */
 	</style>
 	<div class="popup" onload="show(this)" id="popup2">
 		<div class="popupcontainer">
-				<div><h1 style="font-size:40px !important; line-height:1.1; text-align: center">ARE YOU REGISTERED TO VOTE?</h1></div>
-				<div><a class="votebutton" target="blank" href="https://www.usa.gov/register-to-vote">Register here</a></div>
-				<div><a class="votelink" href="#" onclick="hide('popup2')">continue to jonathanhorowitz.us</a></div>
+			<div>
+				<h1 style="font-size:40px !important; line-height:1.1; text-align: center">ARE YOU REGISTERED TO VOTE?</h1>
+			</div>
+			<div><a class="votebutton" target="blank" href="https://www.usa.gov/register-to-vote">Register here</a></div>
+			<div>
+				<div class="votelink" onclick="hide('popup2')">continue to jonathanhorowitz.us</div>
+			</div>
 		</div>
 	</div>
 
