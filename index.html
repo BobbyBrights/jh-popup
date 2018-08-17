@@ -167,17 +167,15 @@ Click the help icon above to learn more.
 			position: fixed;
 			padding: 30px;
 			width: 50%;
-			left: 50%;
-			margin-left: -25%;
 			height: 50%;
+			left: 200px;
 			top: 50%;
-			margin-top: -25%;
+			margin-top: -200px;
 			background: #FFF;
-			z-index: 20;
 			flex: 1;
 			flex-direction: column;
-			min-width: 240px;
-			min-height: 181px;
+			width: 500px;
+			height: 400px;
 			border-radius: 10px;
 			max-height: 400px;
 			align-content: space-between;
@@ -222,14 +220,16 @@ Click the help icon above to learn more.
 
 		.votebutton {
 			/* border: 2px solid black; */
-			border-radius: 5px;
+			border-radius: 6px;
 			background-color: #f52222;
-			padding: 12px;
+			padding: 14px;
 			margin: 2px;
 			color: white;
-			font-size: 28px;
+			font-size: 24px;
 			display: block;
-			transition-duration: .15s
+			transition-duration: .15s;
+			font-family:'Helvetica', sans-serif;
+			font-weight: 400
 		}
 
 		.votebutton:hover {
@@ -247,6 +247,7 @@ Click the help icon above to learn more.
 
 		.votelink:hover {
 			cursor: pointer;
+			color: rgba(0, 0, 0, 0.3)
 		}
 
 		/* end new style */
@@ -254,9 +255,11 @@ Click the help icon above to learn more.
 	<div class="popup" onload="show(this)" id="popup2">
 		<div class="popupcontainer">
 			<div>
-				<h1 style="font-size:40px !important; line-height:1.1; text-align: center">ARE YOU REGISTERED TO VOTE?</h1>
+				<h1 style="font-size:40px !important; line-height:1.1; text-align: center">
+					ARE YOU REGISTERED TO VOTE?
+				</h1>
 			</div>
-			<div><a class="votebutton" target="blank" href="https://www.usa.gov/register-to-vote">Register here</a></div>
+			<div><a class="votebutton" target="blank" href="https://vote.gov/">Register here</a></div>
 			<div>
 				<div class="votelink" onclick="hide('popup2')">continue to jonathanhorowitz.us</div>
 			</div>
