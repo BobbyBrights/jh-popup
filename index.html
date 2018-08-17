@@ -15,14 +15,12 @@
 	<link rel="stylesheet" href="./Jonathan Horowitz_files/style.css">
 	<link rel="stylesheet" type="text/css" href="./Jonathan Horowitz_files/MyFontsWebfontsKit.css">
 	<!--[if lt IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<script src="./Jonathan Horowitz_files/modernizr-1.7.min.js"></script>
 	<script src="./Jonathan Horowitz_files/jquery.min.js"></script>
 	<link rel="dns-prefetch" href="http://s.w.org/">
 	<script type="text/javascript">
 		window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "http:\/\/jonathanhorowitz.us\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8" } };
 		!function (a, b, c) { function d(a, b) { var c = String.fromCharCode; l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, a), 0, 0); var d = k.toDataURL(); l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, b), 0, 0); var e = k.toDataURL(); return d === e } function e(a) { var b; if (!l || !l.fillText) return !1; switch (l.textBaseline = "top", l.font = "600 32px Arial", a) { case "flag": return !(b = d([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819])) && (b = d([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]), !b); case "emoji": return b = d([55358, 56760, 9792, 65039], [55358, 56760, 8203, 9792, 65039]), !b }return !1 } function f(a) { var c = b.createElement("script"); c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var g, h, i, j, k = b.createElement("canvas"), l = k.getContext && k.getContext("2d"); for (j = Array("flag", "emoji"), c.supports = { everything: !0, everythingExceptFlag: !0 }, i = 0; i < j.length; i++)c.supports[j[i]] = e(j[i]), c.supports.everything = c.supports.everything && c.supports[j[i]], "flag" !== j[i] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[j[i]]); c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () { c.DOMReady = !0 }, c.supports.everything || (h = function () { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", h, !1), a.addEventListener("load", h, !1)) : (a.attachEvent("onload", h), b.attachEvent("onreadystatechange", function () { "complete" === b.readyState && c.readyCallback() })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji))) }(window, document, window._wpemojiSettings);
 	</script>
-	<script src="./Jonathan Horowitz_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
 	<script type="text/javascript">
 		$ = function (id) {
 			return document.getElementById(id);
@@ -111,7 +109,7 @@ Click the help icon above to learn more.
 		.popup {
 			display: flex;
 			position: fixed;
-			padding: 10px;
+			padding: 30px;
 			width: 50%;
 			left: 50%;
 			margin-left: -25%;
@@ -125,6 +123,8 @@ Click the help icon above to learn more.
 			min-width: 240px;
 			min-height: 181px;
 			border-radius: 10px;
+			max-height: 400px;
+			align-content: space-between;
 		}
 
 
@@ -137,7 +137,6 @@ Click the help icon above to learn more.
 			right: 0;
 			background: rgba(0, 0, 0, 0.6);
 			z-index: -2;
-			border-radius: 10px;
 		}
 
 		#popup2:before {
@@ -157,22 +156,37 @@ Click the help icon above to learn more.
 			height: 100%;
 			width: 100%;
 			flex: 1;
-			flex-direction: column
+			display: flex;
+			flex-direction: column;
+			line-height: 1.2;
+
+			align-items: center;
+			justify-content: space-between;
 		}
 
 		.votebutton {
 			border: 2px solid black;
 			border-radius: 5px;
-			padding: 20px;
+			padding: 10px;
+			margin: 2px;
 			font-size: 30px;
+			display:block
 
+		}
+		
+		.votelink {
+			padding: 10px;
+			margin: 2px;
+			font-size: 24px;
+			display:block;
+			text-decoration:underline;
 		}
 
 		.votebutton:hover {
-			border-color:rgba(0, 0, 0, 0.4)
+			border-color: rgba(0, 0, 0, 0.4)
 		}
 
-		/* From here on, just aesthetics */
+		/* end new style */
 	</style>
 </head>
 
@@ -216,8 +230,7 @@ Click the help icon above to learn more.
 			<!-- <h1>Homepage</h1> -->
 			<p>
 				<img class="alignnone size-full wp-image-751" src="./Jonathan Horowitz_files/HQ20-JH12654P_cropped27.png" alt="hq20-jh12654p_cropped2"
-				 width="419" height="565" srcset="http://jonathanhorowitz.us/wp-content/uploads/2013/09/HQ20-JH12654P_cropped27.png 419w, http://jonathanhorowitz.us/wp-content/uploads/2013/09/HQ20-JH12654P_cropped27-111x150.png 111w, http://jonathanhorowitz.us/wp-content/uploads/2013/09/HQ20-JH12654P_cropped27-222x300.png 222w"
-				 sizes="(max-width: 419px) 100vw, 419px">
+				 width="419" height="565" sizes="(max-width: 419px) 100vw, 419px">
 			</p>
 			<p>&nbsp;</p>
 		</article>
@@ -225,13 +238,9 @@ Click the help icon above to learn more.
 	<!-- new popup -->
 	<div class="popup" onload="show(this)" id="popup2">
 		<div class="popupcontainer">
-			<div style="margin-top: auto;">
-				<h1 style="padding-top:50px; text-align: center">HAVE YOU REGISTERED TO VOTE?</h1>
-			</div>
-			<div style="padding-top: 75px; margin-bottom: auto; flex-grow: 1;align-self: flex-end; justify-content: space-around;   display: flex;			">
-				<a class="votebutton" href="#" onclick="hide('popup2')">YES</a>
-				<a class="votebutton" target="blank" href="https://www.usa.gov/register-to-vote">NO</a>
-			</div>
+				<div><h1 style="font-size:40px !important; line-height:1.1; text-align: center">HAVE YOU REGISTERED<br /> TO VOTE?</h1></div>
+				<div><a class="votebutton" target="blank" href="https://www.usa.gov/register-to-vote">Register here</a></div>
+				<div><a class="votelink" href="#" onclick="hide('popup2')">Continue to jonathanhorowitz.us</a></div>
 		</div>
 	</div>
 
@@ -240,7 +249,6 @@ Click the help icon above to learn more.
 	</footer>
 
 	<!-- ngg_resource_manager_marker -->
-	<script type="text/javascript" src="./Jonathan Horowitz_files/wp-embed.min.js"></script>
 
 </body>
 
