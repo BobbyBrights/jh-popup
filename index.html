@@ -162,23 +162,40 @@ Click the help icon above to learn more.
 	<style>
 		/* new style */
 
-		.popup {
-			display: flex;
+		.modal {
+			display: block;
 			position: fixed;
-			padding: 30px;
-			left: 10%;
-			top: 50%;
-			margin-top: -200px;
-			background: #FFF;
-			flex: 1;
-			flex-direction: column;
-			width: 500px;
-			height: 300px;
-			border-radius: 10px;
-			max-height: 400px;
-			align-content: space-between;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgb(0,0,0);
+			background-color: rgba(0,0,0,0.7);
 		}
 
+		.model-content {
+			background-color: #fefefe;
+			margin: 20% auto;
+			padding: 20px;
+			border: 3px solid black;
+			border-radius: 5px;
+			width: 50%;
+			min-width: 400px;
+			min-height: 300px;
+			/* height: 100%; */
+			/* width: 100%; */
+			/* flex: 1; */
+			display: flex;
+			flex-direction: column;
+			line-height: 1.2;
+			padding: 30px;
+			flex-direction: column;
+			align-content: space-between;
+			align-items: center;
+			justify-content: space-between; */
+		}
 
 		#popup2:after {
 			position: fixed;
@@ -204,17 +221,6 @@ Click the help icon above to learn more.
 			z-index: -1;
 		}
 
-		.popupcontainer {
-			height: 100%;
-			width: 100%;
-			flex: 1;
-			display: flex;
-			flex-direction: column;
-			line-height: 1.2;
-
-			align-items: center;
-			justify-content: space-between;
-		}
 
 		.votebutton {
 			/* border: 2px solid black; */
@@ -250,8 +256,8 @@ Click the help icon above to learn more.
 
 		/* end new style */
 	</style>
-	<div class="popup" onload="show(this)" id="popup2">
-		<div class="popupcontainer">
+	<div class="modal" onload="show(this)" id="myModal">
+		<div class="model-content">
 			<div>
 				<h1 style="font-size:40px !important; line-height:1.1; text-align: center">
 					ARE YOU REGISTERED TO VOTE?
@@ -259,7 +265,7 @@ Click the help icon above to learn more.
 			</div>
 			<div><a class="votebutton" target="blank" href="https://vote.gov/">Register here</a></div>
 			<div>
-				<div class="votelink" onclick="hide('popup2')">continue to jonathanhorowitz.us</div>
+				<div class="votelink" onclick="hide('myModal')">continue to jonathanhorowitz.us</div>
 			</div>
 		</div>
 	</div>
